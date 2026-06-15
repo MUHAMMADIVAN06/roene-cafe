@@ -6,15 +6,39 @@ const menus = [
   },
 
   {
+    name: "Thai Tea",
+    price: "Rp 10.000",
+    image: "images/thai-tea.jpeg"
+  },
+
+  {
+    name: "Matcha",
+    price: "Rp 15.000",
+    image: "images/matcha.jpeg"
+  },
+
+  {
     name: "Daun Bayam Krispi",
     price: "Rp 10.000",
     image: "images/daun_bayam_krispi.png"
   },
 
   {
+    name: "Kopi Susu Gula Aren",
+    price: "Rp 12.000",
+    image: "images/es-kopi-susu-gula-aren.jpeg"
+  },
+
+  {
     name: "Nasi Daun Jeruk Kulit Ayam",
     price: "Rp 18.000",
     image: "images/nasi_daun_jeruk_kulit_ayam.png"
+  },
+
+  {
+    name: "Lemon Squash",
+    price: "Rp 7.000",
+    image: "images/lemon-squash.jpeg"
   },
 
   {
