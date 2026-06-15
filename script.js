@@ -82,10 +82,10 @@ function getMenuImage(menu) {
 const menus = [
   /* ============ MAKANAN ============ */
   { id: "m1",  category: "makanan", name: "Nasi Goreng Roene",        price: 25000, image: "images/nasi_goreng.png" },
-  { id: "m2",  category: "makanan", name: "Nasi Goreng Jawa",         price: 20000, image: img("nasi goreng jawa") },
-  { id: "m3",  category: "makanan", name: "Sego Endok",               price: 13000, image: img("nasi telur indonesia") },
-  { id: "m4",  category: "makanan", name: "Sego Endok Usus",          price: 20000, image: img("nasi usus ayam") },
-  { id: "m5",  category: "makanan", name: "Sego Endok Lele",          price: 20000, image: img("nasi lele goreng") },
+  { id: "m2",  category: "makanan", name: "Nasi Goreng Jawa",         price: 20000, image: "images/nasi_goreng_jawa.jpeg" },
+  { id: "m3",  category: "makanan", name: "Sego Endok",               price: 13000, image: "images/sego-ndog.jpeg" },
+  { id: "m4",  category: "makanan", name: "Sego Endok Usus",          price: 20000, image: "images/sego-ndog-usus.jpeg"  },
+  { id: "m5",  category: "makanan", name: "Sego Endok Lele",          price: 20000, image: "images/sego-endog-lele.webp" },
   { id: "m6",  category: "makanan", name: "Sego Endok Ati Ampela",    price: 20000, image: img("nasi ati ampela") },
   { id: "m7",  category: "makanan", name: "Kremes Kampung",           price: 30000, image: img("ayam kremes kampung") },
   { id: "m8",  category: "makanan", name: "Kremes Potong",            price: 25000, image: img("ayam kremes goreng") },
