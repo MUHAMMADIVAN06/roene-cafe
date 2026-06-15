@@ -26,6 +26,7 @@
         <li><a href="#menu">Menu</a></li>
         <li><a href="#gallery">Galeri</a></li>
         <li><a href="#testimonial">Testimoni</a></li>
+        <li><a href="#order">Pesan</a></li>
       </ul>
 
       <a href="https://wa.me/6281259669137" class="btn-nav">
@@ -73,10 +74,31 @@
 
   <!-- MENU -->
   <section class="menu-section" id="menu">
-    <h2>Menu Favorit</h2>
+    <h2>Menu Roene Cafe &amp; Resto</h2>
+    <p class="menu-subtitle">
+      Pilih menu favoritmu, atur jumlah, lalu kirim pesananmu langsung lewat WhatsApp.
+    </p>
+
+    <div class="menu-tabs" id="menuTabs">
+      <button class="menu-tab active" data-category="makanan">Makanan</button>
+      <button class="menu-tab" data-category="minuman">Minuman</button>
+      <button class="menu-tab" data-category="snack">Snack</button>
+    </div>
 
     <div class="menu-container" id="menuContainer">
       <!-- diisi JS -->
+    </div>
+  </section>
+
+  <!-- CTA ORDER -->
+  <section class="cta-order" id="order">
+    <div class="cta-content">
+      <h2>Lapar? Pesan Menu Favoritmu Sekarang!</h2>
+      <p>
+        Pilih menu Roene Cafe &amp; Resto, checkout, lalu kirim pesanan
+        langsung lewat WhatsApp tanpa ribet.
+      </p>
+      <a href="#menu" class="hero-btn cta-btn">Pesan Sekarang</a>
     </div>
   </section>
 
@@ -161,6 +183,87 @@
     </div>
 
   </footer>
+
+  <!-- FLOATING CART BUTTON -->
+  <button class="cart-fab" id="cartFab" aria-label="Buka keranjang">
+    <i class="fas fa-shopping-bag"></i>
+    <span class="cart-fab-count" id="cartFabCount">0</span>
+  </button>
+
+  <!-- CART DRAWER -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Keranjang Pesanan</h3>
+      <button class="cart-close" id="cartClose" aria-label="Tutup keranjang">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty" id="cartEmpty">
+        Belum ada menu yang dipilih.
+      </p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span class="cart-total" id="cartTotal">Rp 0</span>
+      </div>
+      <button class="cart-checkout-btn" id="checkoutBtn" disabled>
+        Checkout
+      </button>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-card">
+      <div class="checkout-header">
+        <h3>Detail Pesanan</h3>
+        <button class="checkout-close" id="checkoutClose" aria-label="Tutup form">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <form class="checkout-form" id="checkoutForm" novalidate>
+        <div class="form-group">
+          <label for="custName">Nama Pelanggan</label>
+          <input type="text" id="custName" name="custName" placeholder="Nama lengkap" required>
+        </div>
+
+        <div class="form-group">
+          <label for="custWa">Nomor WhatsApp</label>
+          <input type="tel" id="custWa" name="custWa" placeholder="08xxxxxxxxxx" required>
+        </div>
+
+        <div class="form-group">
+          <label>Metode Pesanan</label>
+          <div class="radio-group">
+            <label class="radio-pill">
+              <input type="radio" name="orderMethod" value="Dine In" checked>
+              <span>Dine In</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="orderMethod" value="Take Away">
+              <span>Take Away</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="custNote">Catatan Tambahan</label>
+          <textarea id="custNote" name="custNote" rows="3" placeholder="Contoh: tidak pedas, tanpa es, dll."></textarea>
+        </div>
+
+        <button type="submit" class="checkout-submit">
+          <i class="fab fa-whatsapp"></i> Kirim Pesanan via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
